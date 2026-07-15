@@ -7,7 +7,7 @@
 
 export const invitationData = {
   graduate: {
-    name: "Adelaide Mayara",
+    name: "Geovanna",
     course: "Bacharelado em Farmácia",
     institution: "NOME DA INSTITUIÇÃO",
     classYear: "2026",
@@ -26,22 +26,31 @@ export const invitationData = {
 
     parentsTitle: "Aos meus pais",
     parentsMessage:
-      "Se hoje realizo este sonho, é porque antes dele existiram dois corações que nunca deixaram de acreditar em mim. Esta conquista também pertence a vocês.",
-    parentsSecondaryMessage:
-      "Cada renúncia de vocês abriu caminho para que eu pudesse chegar até aqui. Meu diploma também leva o nome de quem sempre segurou a minha mão.",
-    parentsSignature:
-      "Meu coração transborda de gratidão. Esta vitória carrega o nome, o amor e os sacrifícios de vocês.",
+      "Se hoje posso celebrar a realização deste sonho, é porque, antes de tudo, eu tive pais que me deram o suporte necessário para acreditar que ele era possível. Vocês não apenas seguraram a minha mão nos momentos de incerteza, mas construíram a base sólida que me permitiu voar alto. Este diploma é o resultado de cada renúncia de vocês, de cada palavra de incentivo e do amor incondicional que transformou os meus maiores objetivos em realidade. Obrigada por me permitirem sonhar e, acima de tudo, por estarem ao meu lado na hora de realizar.",
 
-    familyQuote: "Essa conquista é nossa.",
-    familyQuoteHighlight: "nossa",
-    familyMessage:
-      "Em cada etapa, encontrei em vocês força, apoio e motivos para continuar.",
+    motherTitle: "À minha mãe",
+    motherQuote:
+      "Todas as vezes, minha mãe, que alguém me disse não, você disse sim pro meu coração.",
+    motherMessage:
+      "Olhar para este diploma é sentir uma gratidão que não cabe em palavras. Eu sei que cada conquista desta graduação traz consigo um pedaço do seu esforço, das suas orações e das suas próprias renúncias. Nos dias mais difíceis da faculdade, quando o cansaço parecia vencer, o seu suporte incondicional foi o meu combustível para continuar. Minha eterna gratidão a você, mãe, por ter sido a base de tudo, por me permitir sonhar tão alto e por me dar as ferramentas para realizar este grande sonho. Essa vitória é inteiramente nossa!",
 
     sonTitle: "Ao meu filho",
     sonMessage:
-      "Você não foi um obstáculo na minha caminhada. Foi a razão pela qual eu nunca desisti. Cada página estudada, cada noite em claro e cada lágrima tiveram um único propósito: construir um futuro do qual você possa se orgulhar.",
-    sonHighlights: ["a razão", "nunca desisti", "um futuro"],
-    sonSignature: "Por você e para você.",
+      "O nascimento do meu filho redesenhou a minha vida e me deu a força que eu nem sabia que tinha; tudo o que fiz e enfrentei nesta faculdade foi pensando em garantir o futuro dele. No entanto, eu jamais teria cruzado a linha de chegada se não fossem os meus pais, que abriram mão da própria rotina para cuidar do meu pequeno com tanto amor enquanto eu assistia às aulas. Este diploma pertence a nós três. Aos meus pais, obrigada por protegerem o meu bem mais precioso; ao meu filho, tudo o que conquistei é por você.",
+    sonHighlights: [
+      "me deu a força que eu nem sabia que tinha",
+      "Este diploma pertence a nós três",
+      "tudo o que conquistei é por você",
+    ],
+
+    grandmotherTitle: "À minha vó",
+    grandmotherMessage:
+      "Minha avó sempre esteve na primeira fileira de todas as minhas formaturas, do pré-escolar ao ensino médio, me dando o apoio necessário para chegar até aqui. Infelizmente, ela partiu antes de me ver conquistar o diploma do ensino superior. Embora sua cadeira esteja vazia hoje, sinto que sua torcida e sua bênção me acompanham do céu. Vó, a sua menina conseguiu. Essa vitória também é sua!",
+    grandmotherHighlights: [
+      "sua torcida e sua bênção me acompanham do céu",
+      "Vó, a sua menina conseguiu",
+      "Essa vitória também é sua",
+    ],
 
     centralMessage:
       "Mais do que uma formatura, este convite celebra uma vida transformada pela perseverança. Cada obstáculo fortaleceu meus passos, cada lágrima teve um propósito e cada pessoa que caminhou comigo faz parte desta conquista.",
@@ -92,20 +101,25 @@ export const invitationData = {
   },
 
   photos: {
-    cover: "/images/capa-formanda.jpeg",
-    graduatePortrait: "/images/formanda-retrato.jpeg",
-    parents: "/images/formanda-com-pais.jpeg",
-    family: "/images/formanda-com-familia.jpeg",
-    son: "/images/formanda-com-filho.jpeg",
-    transition: "/images/formanda-transicao.jpeg",
-    final: "/images/foto-final.jpeg",
+    cover: "/images/capa-geovanna.jpeg",
+    graduatePortrait: "/images/capa-geovanna.jpeg",
+    parents: "/images/geovanna-com-pais.jpeg",
+    mother: "/images/geovanna-com-mae.jpeg",
+    son: "/images/geovanna-com-filho.jpeg",
+    grandmother: "/images/geovanna-com-avo.jpeg",
+    transition: "/images/capa-geovanna.jpeg",
+    final: "/images/geovanna-com-pais.jpeg",
     gallery: [
-      "/images/galeria-01.jpeg",
-      "/images/galeria-02.jpeg",
-      "/images/galeria-03.jpeg",
-      "/images/galeria-04.jpeg",
-      "/images/galeria-05.jpeg",
-      "/images/galeria-06.jpeg",
+      "/images/galeria-geovanna-01.jpeg",
+      "/images/galeria-geovanna-02.jpeg",
+      "/images/galeria-geovanna-03.jpeg",
+      "/images/galeria-geovanna-04.jpeg",
+      "/images/galeria-geovanna-05.jpeg",
+      "/images/galeria-geovanna-06.jpeg",
+      "/images/galeria-geovanna-07.jpeg",
+      "/images/galeria-geovanna-08.jpeg",
+      "/images/galeria-geovanna-09.jpeg",
+      "/images/galeria-geovanna-10.jpeg",
     ],
   },
 
@@ -115,8 +129,9 @@ export const invitationData = {
     cover: "center top",
     graduatePortrait: "center center",
     parents: "center center",
-    family: "center center",
-    son: "center 15%",
+    mother: "center center",
+    son: "center center",
+    grandmother: "center center",
     transition: "center center",
     final: "center center",
   },

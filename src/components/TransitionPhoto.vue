@@ -4,7 +4,7 @@
       <img
         :src="photos.transition"
         :style="{ objectPosition: photoPositions.transition || 'center' }"
-        alt="Retrato da formanda antes das informações da cerimônia"
+        alt="Geovanna em traje de formatura antes das informações da cerimônia"
         loading="lazy"
         class="transition-photo__image"
       />

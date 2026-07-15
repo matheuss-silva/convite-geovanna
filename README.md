@@ -26,9 +26,8 @@ O build final fica na pasta `dist/`.
 
 ## Onde alterar os dados
 
-**Tudo** — nome da formanda, curso, textos emocionais, data/local do evento,
-WhatsApp, chave Pix, traje sugerido, programação e caminhos das fotos — está
-centralizado em:
+**Tudo** — nome da formanda, curso, textos das homenagens, data/local do
+evento, WhatsApp, programação e caminhos das fotos — está centralizado em:
 
 ```
 src/config/invitation.js
@@ -47,17 +46,15 @@ ou ajustando os caminhos em `invitation.js`):
 | `cover` | Foto de capa (tela de abertura) |
 | `graduatePortrait` | Retrato individual (primeira foto da galeria) |
 | `parents` | Formanda com pai e mãe |
-| `family` | Formanda com toda a família |
+| `mother` | Geovanna com a mãe |
 | `son` | Formanda com o filho |
+| `grandmother` | Geovanna ainda criança com a avó |
 | `transition` | Foto de transição antes das informações do evento |
 | `final` | Foto da seção de mensagem final |
 | `gallery` | Array de fotos da galeria/carrossel |
 
-> **Nota:** o repositório já vem com imagens placeholder (pretas, 1×1px) em
-> `public/images/` apenas para o site funcionar de imediato após o clone.
-> Substitua-as pelas fotografias reais antes de publicar. Use imagens em
-> proporção retrato (ideal 4:5 ou 3:4), preferencialmente em `.jpg` ou
-> `.webp`, com bom contraste sobre fundo preto.
+As fotografias de Geovanna usam nomes descritivos dentro de `public/images/`.
+Ao substituí-las, prefira imagens em proporção retrato (4:5 ou 3:4).
 
 ### Ajustando o enquadramento das fotos
 
@@ -69,17 +66,10 @@ ex.: `"center 20%"`).
 
 - **Contagem regressiva** até a data/hora definidas em `event.date` e
   `event.startTime`.
-- **Confirmar presença**: abre um formulário em modal e monta uma mensagem
-  para o WhatsApp definido em `contact.whatsapp` (formato internacional,
-  ex.: `5563999999999`).
-- **Presentes**: exibe a chave Pix (`contact.pixKey`) com botão de copiar, e
-  um link opcional para lista de presentes (`contact.giftListUrl`).
-- **Traje**: exibe o texto configurado em `dressCode`.
-- **Adicionar à agenda**: gera e baixa um arquivo `.ics` válido com os dados
-  do evento.
+- **Confirmar presença**: abre uma mensagem pronta para o WhatsApp definido
+  em `event.whatsapp` (formato internacional, ex.: `5563999999999`).
 - **Localização**: abre o Google Maps (`event.mapsUrl`) em nova aba.
-- **Galeria**: carrossel com swipe no celular, grade editorial no desktop, e
-  lightbox com navegação por teclado, clique e gestos.
+- **Galeria**: carrossel com swipe no celular e grade editorial no desktop.
 - **Programação (timeline)**: pode ser ocultada definindo
   `timeline.enabled: false` em `invitation.js`.
 
@@ -101,7 +91,7 @@ publicado em qualquer hospedagem de arquivos estáticos:
 src/
   assets/styles/     estilos globais (variáveis, base, animações)
   components/         todos os componentes Vue da página
-  composables/         useCountdown, useScrollAnimation, useModal
+  composables/         useCountdown e useScrollAnimation
   config/invitation.js  dados e textos do convite (edite aqui)
   utils/                helpers (destaque de texto, gerador de .ics)
   views/InvitationView.vue  monta a página completa
@@ -112,8 +102,6 @@ public/images/         fotografias do convite
 
 - HTML semântico, `alt` descritivo em todas as imagens, `aria-label` em
   botões de ícone.
-- Modais fecham com `Esc`, clique fora, e bloqueiam o scroll da página
-  enquanto abertos.
 - Animações respeitam `prefers-reduced-motion`.
 - Apenas a imagem de capa é carregada com prioridade; as demais usam
   `loading="lazy"`.

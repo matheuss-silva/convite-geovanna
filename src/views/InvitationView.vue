@@ -4,8 +4,9 @@
     <OpeningQuote />
     <JourneySection />
     <ParentsTribute />
-    <FamilyTribute />
+    <MotherTribute />
     <SonTribute />
+    <GrandmotherTribute />
     <MainStorySection />
     <TransitionPhoto />
     <EventDetails />
@@ -23,8 +24,9 @@ import HeroSection from '../components/HeroSection.vue'
 import OpeningQuote from '../components/OpeningQuote.vue'
 import JourneySection from '../components/JourneySection.vue'
 import ParentsTribute from '../components/ParentsTribute.vue'
-import FamilyTribute from '../components/FamilyTribute.vue'
+import MotherTribute from '../components/MotherTribute.vue'
 import SonTribute from '../components/SonTribute.vue'
+import GrandmotherTribute from '../components/GrandmotherTribute.vue'
 import MainStorySection from '../components/MainStorySection.vue'
 import TransitionPhoto from '../components/TransitionPhoto.vue'
 import EventDetails from '../components/EventDetails.vue'

@@ -1,29 +1,29 @@
 <template>
-  <section class="parents-tribute gf-section" aria-label="Homenagem aos pais">
+  <section class="mother-tribute gf-section" aria-label="Homenagem à mãe">
     <figure
       ref="target"
-      class="reveal-scale parents-tribute__figure gf-photo-frame"
+      class="reveal-scale mother-tribute__figure gf-photo-frame"
       :class="{ 'is-visible': isVisible }"
     >
       <img
-        :src="photos.parents"
-        :style="{ objectPosition: photoPositions.parents || 'center' }"
-        alt="Geovanna ao lado de seus pais e de sua família"
+        :src="photos.mother"
+        :style="{ objectPosition: photoPositions.mother || 'center' }"
+        alt="Geovanna celebrando a formatura ao lado de sua mãe"
         loading="lazy"
-        class="parents-tribute__image"
+        class="mother-tribute__image"
       />
     </figure>
 
     <div class="gf-container">
       <div
         ref="contentTarget"
-        class="reveal-stagger parents-tribute__content"
+        class="reveal-stagger mother-tribute__content"
         :class="{ 'is-visible': isContentVisible }"
       >
         <hr class="gf-divider" />
-        <h2 class="parents-tribute__title">{{ texts.parentsTitle }}</h2>
-
-        <p class="parents-tribute__text">{{ texts.parentsMessage }}</p>
+        <h2 class="mother-tribute__title">{{ texts.motherTitle }}</h2>
+        <blockquote class="mother-tribute__quote">“{{ texts.motherQuote }}”</blockquote>
+        <p class="mother-tribute__text">{{ texts.motherMessage }}</p>
       </div>
     </div>
   </section>
@@ -39,31 +39,31 @@ const { target: contentTarget, isVisible: isContentVisible } = useScrollAnimatio
 </script>
 
 <style scoped>
-.parents-tribute {
+.mother-tribute {
   padding-top: var(--space-xl);
   padding-bottom: var(--space-xl);
 }
 
-.parents-tribute__figure {
+.mother-tribute__figure {
   margin: 0 0 var(--space-lg);
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 3 / 4;
   overflow: hidden;
 }
 
-.parents-tribute__image {
+.mother-tribute__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.parents-tribute__content {
+.mother-tribute__content {
   text-align: center;
   max-width: 560px;
   margin: 0 auto;
 }
 
-.parents-tribute__title {
+.mother-tribute__title {
   font-family: var(--font-serif);
   font-weight: 500;
   font-size: clamp(1.8rem, 6vw, 2.6rem);
@@ -71,18 +71,29 @@ const { target: contentTarget, isVisible: isContentVisible } = useScrollAnimatio
   margin-bottom: var(--space-md);
 }
 
-.parents-tribute__text {
+.mother-tribute__quote {
+  margin: 0 0 var(--space-md);
   font-family: var(--font-serif);
-  font-weight: 400;
-  font-size: clamp(1.1rem, 4vw, 1.3rem);
-  line-height: 1.75;
+  font-size: clamp(1.35rem, 5vw, 1.8rem);
+  font-style: italic;
+  line-height: 1.55;
+  color: var(--color-gold-light);
+}
+
+.mother-tribute__text {
+  font-family: var(--font-sans);
+  font-weight: 300;
+  font-size: clamp(1rem, 4vw, 1.1rem);
+  line-height: 1.85;
   color: var(--color-white-secondary);
-  margin-bottom: 1.25rem;
 }
 
 @media (min-width: 640px) {
-  .parents-tribute__figure {
-    aspect-ratio: 16 / 10;
+  .mother-tribute__figure {
+    aspect-ratio: 4 / 5;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 4px;
   }
 }

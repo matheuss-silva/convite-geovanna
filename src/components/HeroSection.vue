@@ -3,7 +3,7 @@
     <img
       :src="photos.cover"
       :style="{ objectPosition: photoPositions.cover || 'center' }"
-      alt="Retrato da formanda em traje de formatura"
+      alt="Geovanna em traje de formatura de Farmácia"
       class="hero__image"
       fetchpriority="high"
     />

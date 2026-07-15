@@ -3,7 +3,7 @@
     <img
       :src="photos.final"
       :style="{ objectPosition: photoPositions.final || 'center' }"
-      alt="Fotografia final da formanda com a família"
+      alt="Geovanna celebrando sua conquista ao lado da família"
       loading="lazy"
       class="final-message__image"
     />

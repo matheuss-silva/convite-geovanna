@@ -22,7 +22,7 @@
         :aria-label="`Ampliar fotografia ${index + 1}`"
         @click="openLightbox(index)"
       >
-        <img :src="photo" :alt="`Fotografia ${index + 1} da formanda`" loading="lazy" />
+        <img :src="photo" :alt="`Memória ${index + 1} da formatura de Geovanna`" loading="lazy" />
       </button>
     </div>
 
