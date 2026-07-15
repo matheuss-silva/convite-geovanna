@@ -7,7 +7,7 @@
 
 export const invitationData = {
   graduate: {
-    name: "Geovanna",
+    name: "Geovanna Gomes",
     course: "Bacharelado em Farmácia",
     institution: "NOME DA INSTITUIÇÃO",
     classYear: "2026",
