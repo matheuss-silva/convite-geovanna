@@ -23,19 +23,32 @@
         <hr class="gf-divider" />
         <h2 class="mother-tribute__title">{{ texts.motherTitle }}</h2>
         <blockquote class="mother-tribute__quote">“{{ texts.motherQuote }}”</blockquote>
-        <p class="mother-tribute__text">{{ texts.motherMessage }}</p>
+        <p class="mother-tribute__text">
+          <span
+            v-for="(fragment, index) in fragments"
+            :key="index"
+            :class="{ 'mother-tribute__highlight': fragment.highlight }"
+            >{{ fragment.text }}</span
+          >
+        </p>
       </div>
     </div>
   </section>
 </template>
 
 <script setup>
+import { computed } from 'vue'
 import { invitationData } from '../config/invitation.js'
 import { useScrollAnimation } from '../composables/useScrollAnimation.js'
+import { buildHighlightFragments } from '../utils/highlightText.js'
 
 const { texts, photos, photoPositions } = invitationData
 const { target, isVisible } = useScrollAnimation()
 const { target: contentTarget, isVisible: isContentVisible } = useScrollAnimation()
+
+const fragments = computed(() =>
+  buildHighlightFragments(texts.motherMessage, texts.motherHighlights)
+)
 </script>
 
 <style scoped>
@@ -86,6 +99,11 @@ const { target: contentTarget, isVisible: isContentVisible } = useScrollAnimatio
   font-size: clamp(1rem, 4vw, 1.1rem);
   line-height: 1.85;
   color: var(--color-white-secondary);
+}
+
+.mother-tribute__highlight {
+  color: var(--color-gold-light);
+  font-weight: 500;
 }
 
 @media (min-width: 640px) {

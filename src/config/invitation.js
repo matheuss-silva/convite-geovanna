@@ -17,29 +17,43 @@ export const invitationData = {
     slideHint: "Deslize para conhecer esta história",
 
     openingQuote:
-      "O diploma marca o fim de uma etapa, mas a verdadeira conquista foi seguir em frente mesmo quando pensei que não conseguiria.",
-    openingQuoteHighlights: ["fim de uma etapa", "verdadeira conquista"],
+      "Mais do que um diploma, levo comigo a certeza de que a perseverança transforma sonhos em realidade. O caminho nem sempre foi fácil, mas cada dificuldade enfrentada tornou esta conquista ainda mais significativa.",
+    openingQuoteHighlights: [
+      "a perseverança transforma sonhos em realidade",
+      "esta conquista ainda mais significativa",
+    ],
 
-    journeyTitle: "Uma história construída com coragem",
-    journeyText:
-      "Entre desafios, escolhas, renúncias e aprendizados, esta conquista foi sendo construída um dia de cada vez.",
+    journeyTitle: "O fim de um ciclo, o início de novos caminhos.",
+    journeyTitleHighlights: ["novos caminhos"],
+    journeyText: "",
 
     parentsTitle: "Aos meus pais",
     parentsMessage:
       "Se hoje posso celebrar a realização deste sonho, é porque, antes de tudo, eu tive pais que me deram o suporte necessário para acreditar que ele era possível. Vocês não apenas seguraram a minha mão nos momentos de incerteza, mas construíram a base sólida que me permitiu voar alto. Este diploma é o resultado de cada renúncia de vocês, de cada palavra de incentivo e do amor incondicional que transformou os meus maiores objetivos em realidade. Obrigada por me permitirem sonhar e, acima de tudo, por estarem ao meu lado na hora de realizar.",
+    parentsHighlights: [
+      "pais que me deram o suporte necessário para acreditar que ele era possível",
+      "construíram a base sólida que me permitiu voar alto",
+      "Este diploma é o resultado de cada renúncia de vocês",
+    ],
 
     motherTitle: "À minha mãe",
     motherQuote:
       "Todas as vezes, minha mãe, que alguém me disse não, você disse sim pro meu coração.",
     motherMessage:
       "Olhar para este diploma é sentir uma gratidão que não cabe em palavras. Eu sei que cada conquista desta graduação traz consigo um pedaço do seu esforço, das suas orações e das suas próprias renúncias. Nos dias mais difíceis da faculdade, quando o cansaço parecia vencer, o seu suporte incondicional foi o meu combustível para continuar. Minha eterna gratidão a você, mãe, por ter sido a base de tudo, por me permitir sonhar tão alto e por me dar as ferramentas para realizar este grande sonho. Essa vitória é inteiramente nossa!",
+    motherHighlights: [
+      "cada conquista desta graduação traz consigo um pedaço do seu esforço, das suas orações e das suas próprias renúncias",
+      "o seu suporte incondicional foi o meu combustível para continuar",
+      "Essa vitória é inteiramente nossa",
+    ],
 
     sonTitle: "Ao meu filho",
     sonMessage:
-      "O nascimento do meu filho redesenhou a minha vida e me deu a força que eu nem sabia que tinha; tudo o que fiz e enfrentei nesta faculdade foi pensando em garantir o futuro dele. No entanto, eu jamais teria cruzado a linha de chegada se não fossem os meus pais, que abriram mão da própria rotina para cuidar do meu pequeno com tanto amor enquanto eu assistia às aulas. Este diploma pertence a nós três. Aos meus pais, obrigada por protegerem o meu bem mais precioso; ao meu filho, tudo o que conquistei é por você.",
+      "O nascimento do meu filho redesenhou a minha vida e me revelou uma força que eu nem sabia que tinha. Enfrentei cada desafio durante a faculdade pensando em construir um futuro melhor para ele. Nada disso seria possível sem os meus pais, que cuidaram do meu pequeno com tanto amor enquanto eu seguia em busca deste sonho. Esta conquista também é deles. Aos meus pais, minha eterna gratidão. Ao meu filho, meu maior amor, tudo o que conquistei é por você.",
     sonHighlights: [
-      "me deu a força que eu nem sabia que tinha",
-      "Este diploma pertence a nós três",
+      "me revelou uma força que eu nem sabia que tinha",
+      "construir um futuro melhor para ele",
+      "Esta conquista também é deles",
       "tudo o que conquistei é por você",
     ],
 
@@ -87,7 +101,7 @@ export const invitationData = {
     address: "",
     city: "Palmas - TO",
     mapsUrl: "https://maps.app.goo.gl/Ero8pZR5o4JSjCbe6",
-    whatsapp: "556384407251",
+    whatsapp: "556384428476",
   },
 
   timeline: {

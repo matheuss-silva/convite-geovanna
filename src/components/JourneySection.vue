@@ -3,20 +3,33 @@
     <div class="gf-container">
       <div ref="target" class="reveal" :class="{ 'is-visible': isVisible }">
         <p class="gf-eyebrow journey__eyebrow">Trajetória</p>
-        <h2 class="journey__title">{{ texts.journeyTitle }}</h2>
+        <h2 class="journey__title">
+          <span
+            v-for="(fragment, index) in titleFragments"
+            :key="index"
+            :class="{ 'journey__title-highlight': fragment.highlight }"
+            >{{ fragment.text }}</span
+          >
+        </h2>
         <hr class="gf-divider" />
-        <p class="journey__text">{{ texts.journeyText }}</p>
+        <p v-if="texts.journeyText" class="journey__text">{{ texts.journeyText }}</p>
       </div>
     </div>
   </section>
 </template>
 
 <script setup>
+import { computed } from 'vue'
 import { invitationData } from '../config/invitation.js'
 import { useScrollAnimation } from '../composables/useScrollAnimation.js'
+import { buildHighlightFragments } from '../utils/highlightText.js'
 
 const { texts } = invitationData
 const { target, isVisible } = useScrollAnimation()
+
+const titleFragments = computed(() =>
+  buildHighlightFragments(texts.journeyTitle, texts.journeyTitleHighlights)
+)
 </script>
 
 <style scoped>
@@ -36,6 +49,11 @@ const { target, isVisible } = useScrollAnimation()
   font-size: clamp(1.7rem, 6vw, 2.4rem);
   color: var(--color-white);
   margin-top: 0.75rem;
+}
+
+.journey__title-highlight {
+  color: var(--color-gold-light);
+  font-style: italic;
 }
 
 .journey__text {

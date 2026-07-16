@@ -41,16 +41,17 @@ const fragments = computed(() =>
   font-family: var(--font-serif);
   font-weight: 400;
   font-style: italic;
-  font-size: clamp(1.5rem, 5.5vw, 2.2rem);
-  line-height: 1.5;
+  font-size: clamp(1.35rem, 4.8vw, 2rem);
+  line-height: 1.6;
   color: var(--color-champagne);
   text-align: center;
-  max-width: 620px;
+  max-width: 760px;
   margin: 0 auto;
 }
 
 .opening-quote__highlight {
   color: var(--color-gold-light);
   font-style: normal;
+  font-weight: 500;
 }
 </style>
